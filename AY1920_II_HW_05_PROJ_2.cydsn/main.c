@@ -187,8 +187,20 @@ int main(void)
                                                                 &AccData[0]);
                 if(error == NO_ERROR)
                 {
-                    //to do
-                    }
+                    //justifying 10 bit data from right side to left side 
+                    OutX = (int16)((AccData[0] | (AccData[1]<<8)))>>6; 
+                    OutY = (int16)((AccData[2] | (AccData[3]<<8)))>>6;
+                    OutZ = (int16)((AccData[4] | (AccData[5]<<8)))>>6;
+                   
+                    /*Since in normal mode +-2g FSR the Sensitivity of the sensor is S=4mg/digit,to get the 
+                    output in mg I multiply the digit value by the Sensitivity whose value change of 0.01%/°C*/
+                    OutX = OutX*4*(1+0.0001*OutTemp);
+                    OutY = OutY*4*(1+0.0001*OutTemp);
+                    OutZ = OutZ*4*(1+0.0001*OutTemp);
+                    
+                    //to do 
+                    
+                }
                 flag_ready0=0;
             }
         }
