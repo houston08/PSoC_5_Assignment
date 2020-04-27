@@ -63,6 +63,7 @@
 */
 #define LIS3DH_OUT_X_L 0x28
 
+_VOLATILE  uint8 flag_ready0=0; //Volatile Global variable enabling to sample
 
 int main(void)
 {
@@ -198,10 +199,17 @@ int main(void)
                     OutY = OutY*4*(1+0.0001*OutTemp);
                     OutZ = OutZ*4*(1+0.0001*OutTemp);
                     
-                    //to do 
+                    OutArray[1] = (uint8_t)(OutX & 0xFF); //X acceleration LSB
+                    OutArray[2] = (uint8_t)(OutX >> 8); //X acceleration MSB
+                    OutArray[3] = (uint8_t)(OutY & 0xFF); //Y acceleration LSB
+                    OutArray[4] = (uint8_t)(OutY >> 8); //Y acceleration MSB
+                    OutArray[5] = (uint8_t)(OutZ & 0xFF); //Z acceleration LSB
+                    OutArray[6] = (uint8_t)(OutZ >> 8); //Z acceleration MSB
+       
+                    UART_Debug_PutArray(OutArray, 8);   //Package sent we'll be analyzed by Bridge control panel                
                     
+                    flag_ready0=0; //The next ISR will change its value
                 }
-                flag_ready0=0;
             }
         }
     }

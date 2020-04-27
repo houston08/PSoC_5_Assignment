@@ -1,0 +1,1405 @@
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"cymetadata.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	cy_metadata
+  20              		.global	cy_meta_flashprotect
+  21              		.global	cy_meta_wonvl
+  22              		.global	cy_meta_custnvl
+  23              		.global	cy_meta_configecc
+  24              		.section	.cyconfigecc,"a",%progbits
+  25              		.align	2
+  26              		.type	cy_meta_configecc, %object
+  27              		.size	cy_meta_configecc, 872
+  28              	cy_meta_configecc:
+  29 0000 02       		.byte	2
+  30 0001 4F       		.byte	79
+  31 0002 00       		.byte	0
+  32 0003 40       		.byte	64
+  33 0004 03       		.byte	3
+  34 0005 65       		.byte	101
+  35 0006 00       		.byte	0
+  36 0007 40       		.byte	64
+  37 0008 04       		.byte	4
+  38 0009 04       		.byte	4
+  39 000a 01       		.byte	1
+  40 000b 40       		.byte	64
+  41 000c 02       		.byte	2
+  42 000d 05       		.byte	5
+  43 000e 01       		.byte	1
+  44 000f 40       		.byte	64
+  45 0010 03       		.byte	3
+  46 0011 15       		.byte	21
+  47 0012 01       		.byte	1
+  48 0013 40       		.byte	64
+  49 0014 01       		.byte	1
+  50 0015 17       		.byte	23
+  51 0016 01       		.byte	1
+  52 0017 40       		.byte	64
+  53 0018 0F       		.byte	15
+  54 0019 18       		.byte	24
+  55 001a 01       		.byte	1
+  56 001b 40       		.byte	64
+  57 001c 34       		.byte	52
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 2
+
+
+  58 001d 19       		.byte	25
+  59 001e 01       		.byte	1
+  60 001f 40       		.byte	64
+  61 0020 69       		.byte	105
+  62 0021 1A       		.byte	26
+  63 0022 01       		.byte	1
+  64 0023 40       		.byte	64
+  65 0024 55       		.byte	85
+  66 0025 1B       		.byte	27
+  67 0026 01       		.byte	1
+  68 0027 40       		.byte	64
+  69 0028 06       		.byte	6
+  70 0029 42       		.byte	66
+  71 002a 01       		.byte	1
+  72 002b 40       		.byte	64
+  73 002c 01       		.byte	1
+  74 002d 43       		.byte	67
+  75 002e 01       		.byte	1
+  76 002f 40       		.byte	64
+  77 0030 03       		.byte	3
+  78 0031 48       		.byte	72
+  79 0032 01       		.byte	1
+  80 0033 40       		.byte	64
+  81 0034 10       		.byte	16
+  82 0035 49       		.byte	73
+  83 0036 01       		.byte	1
+  84 0037 40       		.byte	64
+  85 0038 08       		.byte	8
+  86 0039 4C       		.byte	76
+  87 003a 01       		.byte	1
+  88 003b 40       		.byte	64
+  89 003c 0D       		.byte	13
+  90 003d 4D       		.byte	77
+  91 003e 01       		.byte	1
+  92 003f 40       		.byte	64
+  93 0040 02       		.byte	2
+  94 0041 50       		.byte	80
+  95 0042 01       		.byte	1
+  96 0043 40       		.byte	64
+  97 0044 01       		.byte	1
+  98 0045 51       		.byte	81
+  99 0046 01       		.byte	1
+ 100 0047 40       		.byte	64
+ 101 0048 01       		.byte	1
+ 102 0049 10       		.byte	16
+ 103 004a 0A       		.byte	10
+ 104 004b 4B       		.byte	75
+ 105 004c 88       		.byte	-120
+ 106 004d 72       		.byte	114
+ 107 004e 8A       		.byte	-118
+ 108 004f 0F       		.byte	15
+ 109 0050 8B       		.byte	-117
+ 110 0051 38       		.byte	56
+ 111 0052 39       		.byte	57
+ 112 0053 08       		.byte	8
+ 113 0054 3F       		.byte	63
+ 114 0055 04       		.byte	4
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 3
+
+
+ 115 0056 59       		.byte	89
+ 116 0057 04       		.byte	4
+ 117 0058 5F       		.byte	95
+ 118 0059 01       		.byte	1
+ 119 005a 23       		.byte	35
+ 120 005b 10       		.byte	16
+ 121 005c 87       		.byte	-121
+ 122 005d 10       		.byte	16
+ 123 005e E0       		.byte	-32
+ 124 005f 08       		.byte	8
+ 125 0060 E4       		.byte	-28
+ 126 0061 01       		.byte	1
+ 127 0062 EA       		.byte	-22
+ 128 0063 09       		.byte	9
+ 129 0064 E2       		.byte	-30
+ 130 0065 01       		.byte	1
+ 131 0066 84       		.byte	-124
+ 132 0067 08       		.byte	8
+ 133 0068 86       		.byte	-122
+ 134 0069 02       		.byte	2
+ 135 006a 88       		.byte	-120
+ 136 006b 02       		.byte	2
+ 137 006c 8A       		.byte	-118
+ 138 006d 0C       		.byte	12
+ 139 006e 94       		.byte	-108
+ 140 006f 0F       		.byte	15
+ 141 0070 98       		.byte	-104
+ 142 0071 04       		.byte	4
+ 143 0072 9A       		.byte	-102
+ 144 0073 02       		.byte	2
+ 145 0074 A8       		.byte	-88
+ 146 0075 0F       		.byte	15
+ 147 0076 AC       		.byte	-84
+ 148 0077 01       		.byte	1
+ 149 0078 B2       		.byte	-78
+ 150 0079 0E       		.byte	14
+ 151 007a B4       		.byte	-76
+ 152 007b 01       		.byte	1
+ 153 007c BB       		.byte	-69
+ 154 007d 80       		.byte	-128
+ 155 007e D8       		.byte	-40
+ 156 007f 04       		.byte	4
+ 157 0080 D9       		.byte	-39
+ 158 0081 04       		.byte	4
+ 159 0082 DF       		.byte	-33
+ 160 0083 01       		.byte	1
+ 161 0084 00       		.byte	0
+ 162 0085 04       		.byte	4
+ 163 0086 03       		.byte	3
+ 164 0087 08       		.byte	8
+ 165 0088 04       		.byte	4
+ 166 0089 05       		.byte	5
+ 167 008a 05       		.byte	5
+ 168 008b 02       		.byte	2
+ 169 008c 06       		.byte	6
+ 170 008d 41       		.byte	65
+ 171 008e 07       		.byte	7
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 4
+
+
+ 172 008f 04       		.byte	4
+ 173 0090 08       		.byte	8
+ 174 0091 20       		.byte	32
+ 175 0092 09       		.byte	9
+ 176 0093 04       		.byte	4
+ 177 0094 0D       		.byte	13
+ 178 0095 40       		.byte	64
+ 179 0096 0E       		.byte	14
+ 180 0097 60       		.byte	96
+ 181 0098 0F       		.byte	15
+ 182 0099 08       		.byte	8
+ 183 009a 10       		.byte	16
+ 184 009b 0A       		.byte	10
+ 185 009c 14       		.byte	20
+ 186 009d 80       		.byte	-128
+ 187 009e 17       		.byte	23
+ 188 009f 18       		.byte	24
+ 189 00a0 19       		.byte	25
+ 190 00a1 20       		.byte	32
+ 191 00a2 1B       		.byte	27
+ 192 00a3 0C       		.byte	12
+ 193 00a4 1D       		.byte	29
+ 194 00a5 08       		.byte	8
+ 195 00a6 1E       		.byte	30
+ 196 00a7 4A       		.byte	74
+ 197 00a8 20       		.byte	32
+ 198 00a9 01       		.byte	1
+ 199 00aa 26       		.byte	38
+ 200 00ab 02       		.byte	2
+ 201 00ac 27       		.byte	39
+ 202 00ad 25       		.byte	37
+ 203 00ae 2C       		.byte	44
+ 204 00af 01       		.byte	1
+ 205 00b0 2D       		.byte	45
+ 206 00b1 22       		.byte	34
+ 207 00b2 2F       		.byte	47
+ 208 00b3 20       		.byte	32
+ 209 00b4 36       		.byte	54
+ 210 00b5 92       		.byte	-110
+ 211 00b6 37       		.byte	55
+ 212 00b7 04       		.byte	4
+ 213 00b8 3E       		.byte	62
+ 214 00b9 6A       		.byte	106
+ 215 00ba 45       		.byte	69
+ 216 00bb 08       		.byte	8
+ 217 00bc 46       		.byte	70
+ 218 00bd 40       		.byte	64
+ 219 00be 47       		.byte	71
+ 220 00bf 40       		.byte	64
+ 221 00c0 4D       		.byte	77
+ 222 00c1 20       		.byte	32
+ 223 00c2 4E       		.byte	78
+ 224 00c3 02       		.byte	2
+ 225 00c4 57       		.byte	87
+ 226 00c5 22       		.byte	34
+ 227 00c6 5E       		.byte	94
+ 228 00c7 08       		.byte	8
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 5
+
+
+ 229 00c8 6C       		.byte	108
+ 230 00c9 0A       		.byte	10
+ 231 00ca 6D       		.byte	109
+ 232 00cb 08       		.byte	8
+ 233 00cc 6E       		.byte	110
+ 234 00cd 10       		.byte	16
+ 235 00ce 76       		.byte	118
+ 236 00cf 2B       		.byte	43
+ 237 00d0 77       		.byte	119
+ 238 00d1 18       		.byte	24
+ 239 00d2 88       		.byte	-120
+ 240 00d3 01       		.byte	1
+ 241 00d4 89       		.byte	-119
+ 242 00d5 08       		.byte	8
+ 243 00d6 8D       		.byte	-115
+ 244 00d7 48       		.byte	72
+ 245 00d8 C0       		.byte	-64
+ 246 00d9 F6       		.byte	-10
+ 247 00da C2       		.byte	-62
+ 248 00db F6       		.byte	-10
+ 249 00dc C4       		.byte	-60
+ 250 00dd 73       		.byte	115
+ 251 00de CA       		.byte	-54
+ 252 00df F0       		.byte	-16
+ 253 00e0 CC       		.byte	-52
+ 254 00e1 F0       		.byte	-16
+ 255 00e2 CE       		.byte	-50
+ 256 00e3 F0       		.byte	-16
+ 257 00e4 D0       		.byte	-48
+ 258 00e5 D0       		.byte	-48
+ 259 00e6 D2       		.byte	-46
+ 260 00e7 30       		.byte	48
+ 261 00e8 D6       		.byte	-42
+ 262 00e9 40       		.byte	64
+ 263 00ea E2       		.byte	-30
+ 264 00eb 01       		.byte	1
+ 265 00ec 00       		.byte	0
+ 266 00ed 0C       		.byte	12
+ 267 00ee 02       		.byte	2
+ 268 00ef 71       		.byte	113
+ 269 00f0 04       		.byte	4
+ 270 00f1 14       		.byte	20
+ 271 00f2 05       		.byte	5
+ 272 00f3 03       		.byte	3
+ 273 00f4 07       		.byte	7
+ 274 00f5 14       		.byte	20
+ 275 00f6 09       		.byte	9
+ 276 00f7 20       		.byte	32
+ 277 00f8 0C       		.byte	12
+ 278 00f9 10       		.byte	16
+ 279 00fa 0E       		.byte	14
+ 280 00fb AC       		.byte	-84
+ 281 00fc 0F       		.byte	15
+ 282 00fd 08       		.byte	8
+ 283 00fe 10       		.byte	16
+ 284 00ff 09       		.byte	9
+ 285 0100 11       		.byte	17
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 6
+
+
+ 286 0101 13       		.byte	19
+ 287 0102 12       		.byte	18
+ 288 0103 D0       		.byte	-48
+ 289 0104 13       		.byte	19
+ 290 0105 0C       		.byte	12
+ 291 0106 15       		.byte	21
+ 292 0107 0A       		.byte	10
+ 293 0108 16       		.byte	22
+ 294 0109 03       		.byte	3
+ 295 010a 17       		.byte	23
+ 296 010b 14       		.byte	20
+ 297 010c 18       		.byte	24
+ 298 010d DC       		.byte	-36
+ 299 010e 1A       		.byte	26
+ 300 010f 22       		.byte	34
+ 301 0110 1B       		.byte	27
+ 302 0111 15       		.byte	21
+ 303 0112 21       		.byte	33
+ 304 0113 13       		.byte	19
+ 305 0114 23       		.byte	35
+ 306 0115 04       		.byte	4
+ 307 0116 26       		.byte	38
+ 308 0117 20       		.byte	32
+ 309 0118 29       		.byte	41
+ 310 0119 40       		.byte	64
+ 311 011a 2C       		.byte	44
+ 312 011b 10       		.byte	16
+ 313 011c 2E       		.byte	46
+ 314 011d 40       		.byte	64
+ 315 011e 31       		.byte	49
+ 316 011f 0F       		.byte	15
+ 317 0120 32       		.byte	50
+ 318 0121 1F       		.byte	31
+ 319 0122 33       		.byte	51
+ 320 0123 40       		.byte	64
+ 321 0124 35       		.byte	53
+ 322 0125 10       		.byte	16
+ 323 0126 36       		.byte	54
+ 324 0127 E0       		.byte	-32
+ 325 0128 37       		.byte	55
+ 326 0129 20       		.byte	32
+ 327 012a 3A       		.byte	58
+ 328 012b 80       		.byte	-128
+ 329 012c 3B       		.byte	59
+ 330 012d 02       		.byte	2
+ 331 012e 3F       		.byte	63
+ 332 012f 54       		.byte	84
+ 333 0130 40       		.byte	64
+ 334 0131 52       		.byte	82
+ 335 0132 41       		.byte	65
+ 336 0133 01       		.byte	1
+ 337 0134 45       		.byte	69
+ 338 0135 0B       		.byte	11
+ 339 0136 46       		.byte	70
+ 340 0137 E0       		.byte	-32
+ 341 0138 47       		.byte	71
+ 342 0139 0C       		.byte	12
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 7
+
+
+ 343 013a 48       		.byte	72
+ 344 013b 19       		.byte	25
+ 345 013c 49       		.byte	73
+ 346 013d FF       		.byte	-1
+ 347 013e 4A       		.byte	74
+ 348 013f FF       		.byte	-1
+ 349 0140 4B       		.byte	75
+ 350 0141 FF       		.byte	-1
+ 351 0142 4E       		.byte	78
+ 352 0143 F0       		.byte	-16
+ 353 0144 4F       		.byte	79
+ 354 0145 44       		.byte	68
+ 355 0146 50       		.byte	80
+ 356 0147 0C       		.byte	12
+ 357 0148 54       		.byte	84
+ 358 0149 01       		.byte	1
+ 359 014a 58       		.byte	88
+ 360 014b 04       		.byte	4
+ 361 014c 59       		.byte	89
+ 362 014d 04       		.byte	4
+ 363 014e 5A       		.byte	90
+ 364 014f 04       		.byte	4
+ 365 0150 5B       		.byte	91
+ 366 0151 04       		.byte	4
+ 367 0152 5F       		.byte	95
+ 368 0153 01       		.byte	1
+ 369 0154 66       		.byte	102
+ 370 0155 C0       		.byte	-64
+ 371 0156 6A       		.byte	106
+ 372 0157 40       		.byte	64
+ 373 0158 6B       		.byte	107
+ 374 0159 02       		.byte	2
+ 375 015a 84       		.byte	-124
+ 376 015b 2C       		.byte	44
+ 377 015c 85       		.byte	-123
+ 378 015d 18       		.byte	24
+ 379 015e 86       		.byte	-122
+ 380 015f 43       		.byte	67
+ 381 0160 89       		.byte	-119
+ 382 0161 18       		.byte	24
+ 383 0162 8C       		.byte	-116
+ 384 0163 71       		.byte	113
+ 385 0164 8E       		.byte	-114
+ 386 0165 0E       		.byte	14
+ 387 0166 92       		.byte	-110
+ 388 0167 0C       		.byte	12
+ 389 0168 93       		.byte	-109
+ 390 0169 20       		.byte	32
+ 391 016a 94       		.byte	-108
+ 392 016b 80       		.byte	-128
+ 393 016c 95       		.byte	-107
+ 394 016d 10       		.byte	16
+ 395 016e 96       		.byte	-106
+ 396 016f 13       		.byte	19
+ 397 0170 97       		.byte	-105
+ 398 0171 0C       		.byte	12
+ 399 0172 99       		.byte	-103
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 8
+
+
+ 400 0173 08       		.byte	8
+ 401 0174 9B       		.byte	-101
+ 402 0175 15       		.byte	21
+ 403 0176 A0       		.byte	-96
+ 404 0177 71       		.byte	113
+ 405 0178 A2       		.byte	-94
+ 406 0179 06       		.byte	6
+ 407 017a AB       		.byte	-85
+ 408 017b 02       		.byte	2
+ 409 017c AE       		.byte	-82
+ 410 017d 08       		.byte	8
+ 411 017e AF       		.byte	-81
+ 412 017f 20       		.byte	32
+ 413 0180 B0       		.byte	-80
+ 414 0181 C0       		.byte	-64
+ 415 0182 B1       		.byte	-79
+ 416 0183 06       		.byte	6
+ 417 0184 B2       		.byte	-78
+ 418 0185 0F       		.byte	15
+ 419 0186 B3       		.byte	-77
+ 420 0187 20       		.byte	32
+ 421 0188 B4       		.byte	-76
+ 422 0189 30       		.byte	48
+ 423 018a B5       		.byte	-75
+ 424 018b 18       		.byte	24
+ 425 018c B7       		.byte	-73
+ 426 018d 01       		.byte	1
+ 427 018e B8       		.byte	-72
+ 428 018f 22       		.byte	34
+ 429 0190 BA       		.byte	-70
+ 430 0191 08       		.byte	8
+ 431 0192 BE       		.byte	-66
+ 432 0193 10       		.byte	16
+ 433 0194 BF       		.byte	-65
+ 434 0195 05       		.byte	5
+ 435 0196 C0       		.byte	-64
+ 436 0197 02       		.byte	2
+ 437 0198 C7       		.byte	-57
+ 438 0199 40       		.byte	64
+ 439 019a C9       		.byte	-55
+ 440 019b FF       		.byte	-1
+ 441 019c CA       		.byte	-54
+ 442 019d 07       		.byte	7
+ 443 019e CB       		.byte	-53
+ 444 019f FF       		.byte	-1
+ 445 01a0 CC       		.byte	-52
+ 446 01a1 40       		.byte	64
+ 447 01a2 CD       		.byte	-51
+ 448 01a3 20       		.byte	32
+ 449 01a4 CE       		.byte	-50
+ 450 01a5 F0       		.byte	-16
+ 451 01a6 CF       		.byte	-49
+ 452 01a7 05       		.byte	5
+ 453 01a8 D0       		.byte	-48
+ 454 01a9 08       		.byte	8
+ 455 01aa D4       		.byte	-44
+ 456 01ab 18       		.byte	24
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 9
+
+
+ 457 01ac D8       		.byte	-40
+ 458 01ad 04       		.byte	4
+ 459 01ae D9       		.byte	-39
+ 460 01af 04       		.byte	4
+ 461 01b0 DA       		.byte	-38
+ 462 01b1 04       		.byte	4
+ 463 01b2 DB       		.byte	-37
+ 464 01b3 04       		.byte	4
+ 465 01b4 DF       		.byte	-33
+ 466 01b5 01       		.byte	1
+ 467 01b6 E0       		.byte	-32
+ 468 01b7 40       		.byte	64
+ 469 01b8 E1       		.byte	-31
+ 470 01b9 A8       		.byte	-88
+ 471 01ba E2       		.byte	-30
+ 472 01bb 40       		.byte	64
+ 473 01bc E3       		.byte	-29
+ 474 01bd 20       		.byte	32
+ 475 01be 02       		.byte	2
+ 476 01bf 22       		.byte	34
+ 477 01c0 03       		.byte	3
+ 478 01c1 80       		.byte	-128
+ 479 01c2 05       		.byte	5
+ 480 01c3 84       		.byte	-124
+ 481 01c4 09       		.byte	9
+ 482 01c5 02       		.byte	2
+ 483 01c6 0A       		.byte	10
+ 484 01c7 20       		.byte	32
+ 485 01c8 0B       		.byte	11
+ 486 01c9 08       		.byte	8
+ 487 01ca 0D       		.byte	13
+ 488 01cb 02       		.byte	2
+ 489 01cc 0F       		.byte	15
+ 490 01cd 20       		.byte	32
+ 491 01ce 10       		.byte	16
+ 492 01cf 20       		.byte	32
+ 493 01d0 12       		.byte	18
+ 494 01d1 01       		.byte	1
+ 495 01d2 15       		.byte	21
+ 496 01d3 02       		.byte	2
+ 497 01d4 16       		.byte	22
+ 498 01d5 01       		.byte	1
+ 499 01d6 18       		.byte	24
+ 500 01d7 20       		.byte	32
+ 501 01d8 19       		.byte	25
+ 502 01d9 80       		.byte	-128
+ 503 01da 1A       		.byte	26
+ 504 01db 20       		.byte	32
+ 505 01dc 1B       		.byte	27
+ 506 01dd 80       		.byte	-128
+ 507 01de 1C       		.byte	28
+ 508 01df 40       		.byte	64
+ 509 01e0 1D       		.byte	29
+ 510 01e1 26       		.byte	38
+ 511 01e2 1F       		.byte	31
+ 512 01e3 04       		.byte	4
+ 513 01e4 20       		.byte	32
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 10
+
+
+ 514 01e5 08       		.byte	8
+ 515 01e6 21       		.byte	33
+ 516 01e7 41       		.byte	65
+ 517 01e8 22       		.byte	34
+ 518 01e9 06       		.byte	6
+ 519 01ea 24       		.byte	36
+ 520 01eb 04       		.byte	4
+ 521 01ec 25       		.byte	37
+ 522 01ed 08       		.byte	8
+ 523 01ee 26       		.byte	38
+ 524 01ef 80       		.byte	-128
+ 525 01f0 27       		.byte	39
+ 526 01f1 48       		.byte	72
+ 527 01f2 2A       		.byte	42
+ 528 01f3 10       		.byte	16
+ 529 01f4 2B       		.byte	43
+ 530 01f5 80       		.byte	-128
+ 531 01f6 2F       		.byte	47
+ 532 01f7 0A       		.byte	10
+ 533 01f8 30       		.byte	48
+ 534 01f9 20       		.byte	32
+ 535 01fa 31       		.byte	49
+ 536 01fb 04       		.byte	4
+ 537 01fc 32       		.byte	50
+ 538 01fd 02       		.byte	2
+ 539 01fe 36       		.byte	54
+ 540 01ff 10       		.byte	16
+ 541 0200 37       		.byte	55
+ 542 0201 09       		.byte	9
+ 543 0202 38       		.byte	56
+ 544 0203 68       		.byte	104
+ 545 0204 3D       		.byte	61
+ 546 0205 08       		.byte	8
+ 547 0206 3E       		.byte	62
+ 548 0207 10       		.byte	16
+ 549 0208 43       		.byte	67
+ 550 0209 A0       		.byte	-96
+ 551 020a 45       		.byte	69
+ 552 020b 28       		.byte	40
+ 553 020c 46       		.byte	70
+ 554 020d 20       		.byte	32
+ 555 020e 4A       		.byte	74
+ 556 020f 22       		.byte	34
+ 557 0210 50       		.byte	80
+ 558 0211 04       		.byte	4
+ 559 0212 52       		.byte	82
+ 560 0213 10       		.byte	16
+ 561 0214 54       		.byte	84
+ 562 0215 20       		.byte	32
+ 563 0216 56       		.byte	86
+ 564 0217 01       		.byte	1
+ 565 0218 57       		.byte	87
+ 566 0219 30       		.byte	48
+ 567 021a 58       		.byte	88
+ 568 021b 81       		.byte	-127
+ 569 021c 59       		.byte	89
+ 570 021d 20       		.byte	32
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 11
+
+
+ 571 021e 5A       		.byte	90
+ 572 021f 08       		.byte	8
+ 573 0220 5E       		.byte	94
+ 574 0221 02       		.byte	2
+ 575 0222 66       		.byte	102
+ 576 0223 A0       		.byte	-96
+ 577 0224 81       		.byte	-127
+ 578 0225 40       		.byte	64
+ 579 0226 84       		.byte	-124
+ 580 0227 01       		.byte	1
+ 581 0228 86       		.byte	-122
+ 582 0229 10       		.byte	16
+ 583 022a 88       		.byte	-120
+ 584 022b A4       		.byte	-92
+ 585 022c 8A       		.byte	-118
+ 586 022d 10       		.byte	16
+ 587 022e 8C       		.byte	-116
+ 588 022f 04       		.byte	4
+ 589 0230 8D       		.byte	-115
+ 590 0231 20       		.byte	32
+ 591 0232 92       		.byte	-110
+ 592 0233 10       		.byte	16
+ 593 0234 94       		.byte	-108
+ 594 0235 04       		.byte	4
+ 595 0236 9A       		.byte	-102
+ 596 0237 80       		.byte	-128
+ 597 0238 9B       		.byte	-101
+ 598 0239 01       		.byte	1
+ 599 023a 9C       		.byte	-100
+ 600 023b 20       		.byte	32
+ 601 023c 9F       		.byte	-97
+ 602 023d 40       		.byte	64
+ 603 023e A1       		.byte	-95
+ 604 023f 04       		.byte	4
+ 605 0240 A2       		.byte	-94
+ 606 0241 01       		.byte	1
+ 607 0242 A3       		.byte	-93
+ 608 0243 0A       		.byte	10
+ 609 0244 A6       		.byte	-90
+ 610 0245 90       		.byte	-112
+ 611 0246 B0       		.byte	-80
+ 612 0247 80       		.byte	-128
+ 613 0248 B1       		.byte	-79
+ 614 0249 20       		.byte	32
+ 615 024a B2       		.byte	-78
+ 616 024b 80       		.byte	-128
+ 617 024c B3       		.byte	-77
+ 618 024d 20       		.byte	32
+ 619 024e C0       		.byte	-64
+ 620 024f AD       		.byte	-83
+ 621 0250 C2       		.byte	-62
+ 622 0251 3E       		.byte	62
+ 623 0252 C4       		.byte	-60
+ 624 0253 95       		.byte	-107
+ 625 0254 CA       		.byte	-54
+ 626 0255 35       		.byte	53
+ 627 0256 CC       		.byte	-52
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 12
+
+
+ 628 0257 E7       		.byte	-25
+ 629 0258 CE       		.byte	-50
+ 630 0259 6E       		.byte	110
+ 631 025a D0       		.byte	-48
+ 632 025b 2C       		.byte	44
+ 633 025c D2       		.byte	-46
+ 634 025d 08       		.byte	8
+ 635 025e D6       		.byte	-42
+ 636 025f 8F       		.byte	-113
+ 637 0260 D8       		.byte	-40
+ 638 0261 30       		.byte	48
+ 639 0262 E0       		.byte	-32
+ 640 0263 09       		.byte	9
+ 641 0264 E4       		.byte	-28
+ 642 0265 01       		.byte	1
+ 643 0266 EA       		.byte	-22
+ 644 0267 09       		.byte	9
+ 645 0268 3E       		.byte	62
+ 646 0269 10       		.byte	16
+ 647 026a 5B       		.byte	91
+ 648 026b 08       		.byte	8
+ 649 026c 87       		.byte	-121
+ 650 026d 08       		.byte	8
+ 651 026e CE       		.byte	-50
+ 652 026f 20       		.byte	32
+ 653 0270 D6       		.byte	-42
+ 654 0271 40       		.byte	64
+ 655 0272 E2       		.byte	-30
+ 656 0273 10       		.byte	16
+ 657 0274 96       		.byte	-106
+ 658 0275 10       		.byte	16
+ 659 0276 80       		.byte	-128
+ 660 0277 08       		.byte	8
+ 661 0278 96       		.byte	-106
+ 662 0279 10       		.byte	16
+ 663 027a E2       		.byte	-30
+ 664 027b 80       		.byte	-128
+ 665 027c 12       		.byte	18
+ 666 027d 20       		.byte	32
+ 667 027e 16       		.byte	22
+ 668 027f 40       		.byte	64
+ 669 0280 70       		.byte	112
+ 670 0281 08       		.byte	8
+ 671 0282 7F       		.byte	127
+ 672 0283 02       		.byte	2
+ 673 0284 82       		.byte	-126
+ 674 0285 20       		.byte	32
+ 675 0286 86       		.byte	-122
+ 676 0287 40       		.byte	64
+ 677 0288 A0       		.byte	-96
+ 678 0289 08       		.byte	8
+ 679 028a A3       		.byte	-93
+ 680 028b 02       		.byte	2
+ 681 028c AA       		.byte	-86
+ 682 028d 10       		.byte	16
+ 683 028e AF       		.byte	-81
+ 684 028f 02       		.byte	2
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 13
+
+
+ 685 0290 C4       		.byte	-60
+ 686 0291 30       		.byte	48
+ 687 0292 DC       		.byte	-36
+ 688 0293 80       		.byte	-128
+ 689 0294 DE       		.byte	-34
+ 690 0295 20       		.byte	32
+ 691 0296 E0       		.byte	-32
+ 692 0297 10       		.byte	16
+ 693 0298 E4       		.byte	-28
+ 694 0299 80       		.byte	-128
+ 695 029a EA       		.byte	-22
+ 696 029b 90       		.byte	-112
+ 697 029c 10       		.byte	16
+ 698 029d 20       		.byte	32
+ 699 029e 13       		.byte	19
+ 700 029f 20       		.byte	32
+ 701 02a0 15       		.byte	21
+ 702 02a1 08       		.byte	8
+ 703 02a2 7B       		.byte	123
+ 704 02a3 10       		.byte	16
+ 705 02a4 7F       		.byte	127
+ 706 02a5 40       		.byte	64
+ 707 02a6 80       		.byte	-128
+ 708 02a7 20       		.byte	32
+ 709 02a8 C4       		.byte	-60
+ 710 02a9 0E       		.byte	14
+ 711 02aa DE       		.byte	-34
+ 712 02ab 03       		.byte	3
+ 713 02ac 10       		.byte	16
+ 714 02ad 40       		.byte	64
+ 715 02ae 71       		.byte	113
+ 716 02af 02       		.byte	2
+ 717 02b0 81       		.byte	-127
+ 718 02b1 02       		.byte	2
+ 719 02b2 83       		.byte	-125
+ 720 02b3 10       		.byte	16
+ 721 02b4 87       		.byte	-121
+ 722 02b5 40       		.byte	64
+ 723 02b6 88       		.byte	-120
+ 724 02b7 40       		.byte	64
+ 725 02b8 97       		.byte	-105
+ 726 02b9 80       		.byte	-128
+ 727 02ba A7       		.byte	-89
+ 728 02bb 10       		.byte	16
+ 729 02bc AB       		.byte	-85
+ 730 02bd 20       		.byte	32
+ 731 02be AD       		.byte	-83
+ 732 02bf 04       		.byte	4
+ 733 02c0 C4       		.byte	-60
+ 734 02c1 08       		.byte	8
+ 735 02c2 DC       		.byte	-36
+ 736 02c3 01       		.byte	1
+ 737 02c4 E2       		.byte	-30
+ 738 02c5 01       		.byte	1
+ 739 02c6 10       		.byte	16
+ 740 02c7 01       		.byte	1
+ 741 02c8 1C       		.byte	28
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 14
+
+
+ 742 02c9 01       		.byte	1
+ 743 02ca 03       		.byte	3
+ 744 02cb C0       		.byte	-64
+ 745 02cc 02       		.byte	2
+ 746 02cd 80       		.byte	-128
+ 747 02ce 00       		.byte	0
+ 748 02cf 00       		.byte	0
+ 749 02d0 43       		.byte	67
+ 750 02d1 00       		.byte	0
+ 751 02d2 00       		.byte	0
+ 752 02d3 00       		.byte	0
+ 753 02d4 FF       		.byte	-1
+ 754 02d5 10       		.byte	16
+ 755 02d6 00       		.byte	0
+ 756 02d7 00       		.byte	0
+ 757 02d8 82       		.byte	-126
+ 758 02d9 08       		.byte	8
+ 759 02da 00       		.byte	0
+ 760 02db 00       		.byte	0
+ 761 02dc 1C       		.byte	28
+ 762 02dd 18       		.byte	24
+ 763 02de E3       		.byte	-29
+ 764 02df 00       		.byte	0
+ 765 02e0 08       		.byte	8
+ 766 02e1 1C       		.byte	28
+ 767 02e2 00       		.byte	0
+ 768 02e3 61       		.byte	97
+ 769 02e4 1F       		.byte	31
+ 770 02e5 00       		.byte	0
+ 771 02e6 E0       		.byte	-32
+ 772 02e7 80       		.byte	-128
+ 773 02e8 41       		.byte	65
+ 774 02e9 3C       		.byte	60
+ 775 02ea 00       		.byte	0
+ 776 02eb 42       		.byte	66
+ 777 02ec C3       		.byte	-61
+ 778 02ed 04       		.byte	4
+ 779 02ee 00       		.byte	0
+ 780 02ef 00       		.byte	0
+ 781 02f0 F3       		.byte	-13
+ 782 02f1 00       		.byte	0
+ 783 02f2 0C       		.byte	12
+ 784 02f3 04       		.byte	4
+ 785 02f4 00       		.byte	0
+ 786 02f5 7F       		.byte	127
+ 787 02f6 E3       		.byte	-29
+ 788 02f7 00       		.byte	0
+ 789 02f8 04       		.byte	4
+ 790 02f9 00       		.byte	0
+ 791 02fa 00       		.byte	0
+ 792 02fb 80       		.byte	-128
+ 793 02fc 0C       		.byte	12
+ 794 02fd 00       		.byte	0
+ 795 02fe 00       		.byte	0
+ 796 02ff 23       		.byte	35
+ 797 0300 00       		.byte	0
+ 798 0301 67       		.byte	103
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 15
+
+
+ 799 0302 00       		.byte	0
+ 800 0303 18       		.byte	24
+ 801 0304 2C       		.byte	44
+ 802 0305 38       		.byte	56
+ 803 0306 0F       		.byte	15
+ 804 0307 80       		.byte	-128
+ 805 0308 10       		.byte	16
+ 806 0309 1F       		.byte	31
+ 807 030a C0       		.byte	-64
+ 808 030b 40       		.byte	64
+ 809 030c 00       		.byte	0
+ 810 030d 80       		.byte	-128
+ 811 030e 0A       		.byte	10
+ 812 030f 20       		.byte	32
+ 813 0310 00       		.byte	0
+ 814 0311 00       		.byte	0
+ 815 0312 10       		.byte	16
+ 816 0313 04       		.byte	4
+ 817 0314 36       		.byte	54
+ 818 0315 04       		.byte	4
+ 819 0316 05       		.byte	5
+ 820 0317 00       		.byte	0
+ 821 0318 01       		.byte	1
+ 822 0319 00       		.byte	0
+ 823 031a C0       		.byte	-64
+ 824 031b E0       		.byte	-32
+ 825 031c 28       		.byte	40
+ 826 031d FF       		.byte	-1
+ 827 031e FF       		.byte	-1
+ 828 031f FF       		.byte	-1
+ 829 0320 62       		.byte	98
+ 830 0321 A0       		.byte	-96
+ 831 0322 F0       		.byte	-16
+ 832 0323 41       		.byte	65
+ 833 0324 0C       		.byte	12
+ 834 0325 00       		.byte	0
+ 835 0326 00       		.byte	0
+ 836 0327 00       		.byte	0
+ 837 0328 00       		.byte	0
+ 838 0329 00       		.byte	0
+ 839 032a 02       		.byte	2
+ 840 032b 12       		.byte	18
+ 841 032c 04       		.byte	4
+ 842 032d 04       		.byte	4
+ 843 032e 04       		.byte	4
+ 844 032f 04       		.byte	4
+ 845 0330 00       		.byte	0
+ 846 0331 00       		.byte	0
+ 847 0332 00       		.byte	0
+ 848 0333 01       		.byte	1
+ 849 0334 00       		.byte	0
+ 850 0335 00       		.byte	0
+ 851 0336 00       		.byte	0
+ 852 0337 00       		.byte	0
+ 853 0338 00       		.byte	0
+ 854 0339 00       		.byte	0
+ 855 033a 40       		.byte	64
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 16
+
+
+ 856 033b 02       		.byte	2
+ 857 033c 00       		.byte	0
+ 858 033d 10       		.byte	16
+ 859 033e 30       		.byte	48
+ 860 033f 10       		.byte	16
+ 861 0340 00       		.byte	0
+ 862 0341 10       		.byte	16
+ 863 0342 10       		.byte	16
+ 864 0343 12       		.byte	18
+ 865 0344 00       		.byte	0
+ 866 0345 00       		.byte	0
+ 867 0346 00       		.byte	0
+ 868 0347 00       		.byte	0
+ 869 0348 00       		.byte	0
+ 870 0349 00       		.byte	0
+ 871 034a 00       		.byte	0
+ 872 034b 00       		.byte	0
+ 873 034c 00       		.byte	0
+ 874 034d 00       		.byte	0
+ 875 034e 00       		.byte	0
+ 876 034f 00       		.byte	0
+ 877 0350 00       		.byte	0
+ 878 0351 00       		.byte	0
+ 879 0352 00       		.byte	0
+ 880 0353 00       		.byte	0
+ 881 0354 83       		.byte	-125
+ 882 0355 00       		.byte	0
+ 883 0356 40       		.byte	64
+ 884 0357 80       		.byte	-128
+ 885 0358 83       		.byte	-125
+ 886 0359 00       		.byte	0
+ 887 035a 83       		.byte	-125
+ 888 035b 00       		.byte	0
+ 889 035c 00       		.byte	0
+ 890 035d 00       		.byte	0
+ 891 035e 00       		.byte	0
+ 892 035f 00       		.byte	0
+ 893 0360 00       		.byte	0
+ 894 0361 0B       		.byte	11
+ 895 0362 0B       		.byte	11
+ 896 0363 00       		.byte	0
+ 897 0364 00       		.byte	0
+ 898 0365 00       		.byte	0
+ 899 0366 00       		.byte	0
+ 900 0367 00       		.byte	0
+ 901              		.section	.cywolatch,"a",%progbits
+ 902              		.align	2
+ 903              		.type	cy_meta_wonvl, %object
+ 904              		.size	cy_meta_wonvl, 4
+ 905              	cy_meta_wonvl:
+ 906 0000 BC       		.byte	-68
+ 907 0001 90       		.byte	-112
+ 908 0002 AC       		.byte	-84
+ 909 0003 AF       		.byte	-81
+ 910              		.section	.cycustnvl,"a",%progbits
+ 911              		.align	2
+ 912              		.type	cy_meta_custnvl, %object
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 17
+
+
+ 913              		.size	cy_meta_custnvl, 4
+ 914              	cy_meta_custnvl:
+ 915 0000 00       		.byte	0
+ 916 0001 00       		.byte	0
+ 917 0002 40       		.byte	64
+ 918 0003 05       		.byte	5
+ 919              		.section	.cymeta,"a",%progbits
+ 920              		.align	2
+ 921              		.type	cy_metadata, %object
+ 922              		.size	cy_metadata, 12
+ 923              	cy_metadata:
+ 924 0000 00       		.byte	0
+ 925 0001 01       		.byte	1
+ 926 0002 2E       		.byte	46
+ 927 0003 16       		.byte	22
+ 928 0004 10       		.byte	16
+ 929 0005 69       		.byte	105
+ 930 0006 00       		.byte	0
+ 931 0007 01       		.byte	1
+ 932 0008 00       		.byte	0
+ 933 0009 00       		.byte	0
+ 934 000a 00       		.byte	0
+ 935 000b 00       		.byte	0
+ 936              		.section	.cyflashprotect,"a",%progbits
+ 937              		.align	2
+ 938              		.type	cy_meta_flashprotect, %object
+ 939              		.size	cy_meta_flashprotect, 256
+ 940              	cy_meta_flashprotect:
+ 941 0000 00000000 		.space	256
+ 941      00000000 
+ 941      00000000 
+ 941      00000000 
+ 941      00000000 
+ 942              		.text
+ 943              	.Letext0:
+ 944              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 945              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.3\\psoc creator\\import\\gnu\\arm\\5.4.
+ 946              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
+ 947              		.section	.debug_info,"",%progbits
+ 948              	.Ldebug_info0:
+ 949 0000 31010000 		.4byte	0x131
+ 950 0004 0400     		.2byte	0x4
+ 951 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 952 000a 04       		.byte	0x4
+ 953 000b 01       		.uleb128 0x1
+ 954 000c 24000000 		.4byte	.LASF17
+ 955 0010 0C       		.byte	0xc
+ 956 0011 B9010000 		.4byte	.LASF18
+ 957 0015 7E010000 		.4byte	.LASF19
+ 958 0019 00000000 		.4byte	.Ldebug_line0
+ 959 001d 02       		.uleb128 0x2
+ 960 001e 01       		.byte	0x1
+ 961 001f 06       		.byte	0x6
+ 962 0020 72010000 		.4byte	.LASF0
+ 963 0024 03       		.uleb128 0x3
+ 964 0025 00000000 		.4byte	.LASF9
+ 965 0029 01       		.byte	0x1
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 18
+
+
+ 966 002a 1D       		.byte	0x1d
+ 967 002b 2F000000 		.4byte	0x2f
+ 968 002f 02       		.uleb128 0x2
+ 969 0030 01       		.byte	0x1
+ 970 0031 08       		.byte	0x8
+ 971 0032 16000000 		.4byte	.LASF1
+ 972 0036 02       		.uleb128 0x2
+ 973 0037 02       		.byte	0x2
+ 974 0038 05       		.byte	0x5
+ 975 0039 5F010000 		.4byte	.LASF2
+ 976 003d 02       		.uleb128 0x2
+ 977 003e 02       		.byte	0x2
+ 978 003f 07       		.byte	0x7
+ 979 0040 C4000000 		.4byte	.LASF3
+ 980 0044 02       		.uleb128 0x2
+ 981 0045 04       		.byte	0x4
+ 982 0046 05       		.byte	0x5
+ 983 0047 69010000 		.4byte	.LASF4
+ 984 004b 02       		.uleb128 0x2
+ 985 004c 04       		.byte	0x4
+ 986 004d 07       		.byte	0x7
+ 987 004e B2000000 		.4byte	.LASF5
+ 988 0052 02       		.uleb128 0x2
+ 989 0053 08       		.byte	0x8
+ 990 0054 05       		.byte	0x5
+ 991 0055 51010000 		.4byte	.LASF6
+ 992 0059 02       		.uleb128 0x2
+ 993 005a 08       		.byte	0x8
+ 994 005b 07       		.byte	0x7
+ 995 005c 06010000 		.4byte	.LASF7
+ 996 0060 04       		.uleb128 0x4
+ 997 0061 04       		.byte	0x4
+ 998 0062 05       		.byte	0x5
+ 999 0063 696E7400 		.ascii	"int\000"
+ 1000 0067 02       		.uleb128 0x2
+ 1001 0068 04       		.byte	0x4
+ 1002 0069 07       		.byte	0x7
+ 1003 006a F9000000 		.4byte	.LASF8
+ 1004 006e 03       		.uleb128 0x3
+ 1005 006f 1D010000 		.4byte	.LASF10
+ 1006 0073 02       		.byte	0x2
+ 1007 0074 18       		.byte	0x18
+ 1008 0075 24000000 		.4byte	0x24
+ 1009 0079 05       		.uleb128 0x5
+ 1010 007a 91000000 		.4byte	0x91
+ 1011 007e 8A000000 		.4byte	0x8a
+ 1012 0082 06       		.uleb128 0x6
+ 1013 0083 8A000000 		.4byte	0x8a
+ 1014 0087 6703     		.2byte	0x367
+ 1015 0089 00       		.byte	0
+ 1016 008a 02       		.uleb128 0x2
+ 1017 008b 04       		.byte	0x4
+ 1018 008c 07       		.byte	0x7
+ 1019 008d 48010000 		.4byte	.LASF11
+ 1020 0091 07       		.uleb128 0x7
+ 1021 0092 6E000000 		.4byte	0x6e
+ 1022 0096 08       		.uleb128 0x8
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 19
+
+
+ 1023 0097 E7000000 		.4byte	.LASF12
+ 1024 009b 03       		.byte	0x3
+ 1025 009c 1F       		.byte	0x1f
+ 1026 009d A7000000 		.4byte	0xa7
+ 1027 00a1 05       		.uleb128 0x5
+ 1028 00a2 03       		.byte	0x3
+ 1029 00a3 00000000 		.4byte	cy_meta_configecc
+ 1030 00a7 07       		.uleb128 0x7
+ 1031 00a8 79000000 		.4byte	0x79
+ 1032 00ac 05       		.uleb128 0x5
+ 1033 00ad 91000000 		.4byte	0x91
+ 1034 00b1 BC000000 		.4byte	0xbc
+ 1035 00b5 09       		.uleb128 0x9
+ 1036 00b6 8A000000 		.4byte	0x8a
+ 1037 00ba 03       		.byte	0x3
+ 1038 00bb 00       		.byte	0
+ 1039 00bc 08       		.uleb128 0x8
+ 1040 00bd D7000000 		.4byte	.LASF13
+ 1041 00c1 03       		.byte	0x3
+ 1042 00c2 99       		.byte	0x99
+ 1043 00c3 CD000000 		.4byte	0xcd
+ 1044 00c7 05       		.uleb128 0x5
+ 1045 00c8 03       		.byte	0x3
+ 1046 00c9 00000000 		.4byte	cy_meta_custnvl
+ 1047 00cd 07       		.uleb128 0x7
+ 1048 00ce AC000000 		.4byte	0xac
+ 1049 00d2 08       		.uleb128 0x8
+ 1050 00d3 3A010000 		.4byte	.LASF14
+ 1051 00d7 03       		.byte	0x3
+ 1052 00d8 A7       		.byte	0xa7
+ 1053 00d9 E3000000 		.4byte	0xe3
+ 1054 00dd 05       		.uleb128 0x5
+ 1055 00de 03       		.byte	0x3
+ 1056 00df 00000000 		.4byte	cy_meta_wonvl
+ 1057 00e3 07       		.uleb128 0x7
+ 1058 00e4 AC000000 		.4byte	0xac
+ 1059 00e8 05       		.uleb128 0x5
+ 1060 00e9 91000000 		.4byte	0x91
+ 1061 00ed F8000000 		.4byte	0xf8
+ 1062 00f1 09       		.uleb128 0x9
+ 1063 00f2 8A000000 		.4byte	0x8a
+ 1064 00f6 FF       		.byte	0xff
+ 1065 00f7 00       		.byte	0
+ 1066 00f8 08       		.uleb128 0x8
+ 1067 00f9 25010000 		.4byte	.LASF15
+ 1068 00fd 03       		.byte	0x3
+ 1069 00fe B5       		.byte	0xb5
+ 1070 00ff 09010000 		.4byte	0x109
+ 1071 0103 05       		.uleb128 0x5
+ 1072 0104 03       		.byte	0x3
+ 1073 0105 00000000 		.4byte	cy_meta_flashprotect
+ 1074 0109 07       		.uleb128 0x7
+ 1075 010a E8000000 		.4byte	0xe8
+ 1076 010e 05       		.uleb128 0x5
+ 1077 010f 91000000 		.4byte	0x91
+ 1078 0113 1E010000 		.4byte	0x11e
+ 1079 0117 09       		.uleb128 0x9
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 20
+
+
+ 1080 0118 8A000000 		.4byte	0x8a
+ 1081 011c 0B       		.byte	0xb
+ 1082 011d 00       		.byte	0
+ 1083 011e 08       		.uleb128 0x8
+ 1084 011f 0A000000 		.4byte	.LASF16
+ 1085 0123 03       		.byte	0x3
+ 1086 0124 E2       		.byte	0xe2
+ 1087 0125 2F010000 		.4byte	0x12f
+ 1088 0129 05       		.uleb128 0x5
+ 1089 012a 03       		.byte	0x3
+ 1090 012b 00000000 		.4byte	cy_metadata
+ 1091 012f 07       		.uleb128 0x7
+ 1092 0130 0E010000 		.4byte	0x10e
+ 1093 0134 00       		.byte	0
+ 1094              		.section	.debug_abbrev,"",%progbits
+ 1095              	.Ldebug_abbrev0:
+ 1096 0000 01       		.uleb128 0x1
+ 1097 0001 11       		.uleb128 0x11
+ 1098 0002 01       		.byte	0x1
+ 1099 0003 25       		.uleb128 0x25
+ 1100 0004 0E       		.uleb128 0xe
+ 1101 0005 13       		.uleb128 0x13
+ 1102 0006 0B       		.uleb128 0xb
+ 1103 0007 03       		.uleb128 0x3
+ 1104 0008 0E       		.uleb128 0xe
+ 1105 0009 1B       		.uleb128 0x1b
+ 1106 000a 0E       		.uleb128 0xe
+ 1107 000b 10       		.uleb128 0x10
+ 1108 000c 17       		.uleb128 0x17
+ 1109 000d 00       		.byte	0
+ 1110 000e 00       		.byte	0
+ 1111 000f 02       		.uleb128 0x2
+ 1112 0010 24       		.uleb128 0x24
+ 1113 0011 00       		.byte	0
+ 1114 0012 0B       		.uleb128 0xb
+ 1115 0013 0B       		.uleb128 0xb
+ 1116 0014 3E       		.uleb128 0x3e
+ 1117 0015 0B       		.uleb128 0xb
+ 1118 0016 03       		.uleb128 0x3
+ 1119 0017 0E       		.uleb128 0xe
+ 1120 0018 00       		.byte	0
+ 1121 0019 00       		.byte	0
+ 1122 001a 03       		.uleb128 0x3
+ 1123 001b 16       		.uleb128 0x16
+ 1124 001c 00       		.byte	0
+ 1125 001d 03       		.uleb128 0x3
+ 1126 001e 0E       		.uleb128 0xe
+ 1127 001f 3A       		.uleb128 0x3a
+ 1128 0020 0B       		.uleb128 0xb
+ 1129 0021 3B       		.uleb128 0x3b
+ 1130 0022 0B       		.uleb128 0xb
+ 1131 0023 49       		.uleb128 0x49
+ 1132 0024 13       		.uleb128 0x13
+ 1133 0025 00       		.byte	0
+ 1134 0026 00       		.byte	0
+ 1135 0027 04       		.uleb128 0x4
+ 1136 0028 24       		.uleb128 0x24
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 21
+
+
+ 1137 0029 00       		.byte	0
+ 1138 002a 0B       		.uleb128 0xb
+ 1139 002b 0B       		.uleb128 0xb
+ 1140 002c 3E       		.uleb128 0x3e
+ 1141 002d 0B       		.uleb128 0xb
+ 1142 002e 03       		.uleb128 0x3
+ 1143 002f 08       		.uleb128 0x8
+ 1144 0030 00       		.byte	0
+ 1145 0031 00       		.byte	0
+ 1146 0032 05       		.uleb128 0x5
+ 1147 0033 01       		.uleb128 0x1
+ 1148 0034 01       		.byte	0x1
+ 1149 0035 49       		.uleb128 0x49
+ 1150 0036 13       		.uleb128 0x13
+ 1151 0037 01       		.uleb128 0x1
+ 1152 0038 13       		.uleb128 0x13
+ 1153 0039 00       		.byte	0
+ 1154 003a 00       		.byte	0
+ 1155 003b 06       		.uleb128 0x6
+ 1156 003c 21       		.uleb128 0x21
+ 1157 003d 00       		.byte	0
+ 1158 003e 49       		.uleb128 0x49
+ 1159 003f 13       		.uleb128 0x13
+ 1160 0040 2F       		.uleb128 0x2f
+ 1161 0041 05       		.uleb128 0x5
+ 1162 0042 00       		.byte	0
+ 1163 0043 00       		.byte	0
+ 1164 0044 07       		.uleb128 0x7
+ 1165 0045 26       		.uleb128 0x26
+ 1166 0046 00       		.byte	0
+ 1167 0047 49       		.uleb128 0x49
+ 1168 0048 13       		.uleb128 0x13
+ 1169 0049 00       		.byte	0
+ 1170 004a 00       		.byte	0
+ 1171 004b 08       		.uleb128 0x8
+ 1172 004c 34       		.uleb128 0x34
+ 1173 004d 00       		.byte	0
+ 1174 004e 03       		.uleb128 0x3
+ 1175 004f 0E       		.uleb128 0xe
+ 1176 0050 3A       		.uleb128 0x3a
+ 1177 0051 0B       		.uleb128 0xb
+ 1178 0052 3B       		.uleb128 0x3b
+ 1179 0053 0B       		.uleb128 0xb
+ 1180 0054 49       		.uleb128 0x49
+ 1181 0055 13       		.uleb128 0x13
+ 1182 0056 3F       		.uleb128 0x3f
+ 1183 0057 19       		.uleb128 0x19
+ 1184 0058 02       		.uleb128 0x2
+ 1185 0059 18       		.uleb128 0x18
+ 1186 005a 00       		.byte	0
+ 1187 005b 00       		.byte	0
+ 1188 005c 09       		.uleb128 0x9
+ 1189 005d 21       		.uleb128 0x21
+ 1190 005e 00       		.byte	0
+ 1191 005f 49       		.uleb128 0x49
+ 1192 0060 13       		.uleb128 0x13
+ 1193 0061 2F       		.uleb128 0x2f
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 22
+
+
+ 1194 0062 0B       		.uleb128 0xb
+ 1195 0063 00       		.byte	0
+ 1196 0064 00       		.byte	0
+ 1197 0065 00       		.byte	0
+ 1198              		.section	.debug_aranges,"",%progbits
+ 1199 0000 14000000 		.4byte	0x14
+ 1200 0004 0200     		.2byte	0x2
+ 1201 0006 00000000 		.4byte	.Ldebug_info0
+ 1202 000a 04       		.byte	0x4
+ 1203 000b 00       		.byte	0
+ 1204 000c 0000     		.2byte	0
+ 1205 000e 0000     		.2byte	0
+ 1206 0010 00000000 		.4byte	0
+ 1207 0014 00000000 		.4byte	0
+ 1208              		.section	.debug_line,"",%progbits
+ 1209              	.Ldebug_line0:
+ 1210 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
+ 1210      02003701 
+ 1210      00000201 
+ 1210      FB0E0D00 
+ 1210      01010101 
+ 1211              	.LASF9:
+ 1212 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 1212      6E74385F 
+ 1212      7400
+ 1213              	.LASF16:
+ 1214 000a 63795F6D 		.ascii	"cy_metadata\000"
+ 1214      65746164 
+ 1214      61746100 
+ 1215              	.LASF1:
+ 1216 0016 756E7369 		.ascii	"unsigned char\000"
+ 1216      676E6564 
+ 1216      20636861 
+ 1216      7200
+ 1217              	.LASF17:
+ 1218 0024 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1218      43313120 
+ 1218      352E342E 
+ 1218      31203230 
+ 1218      31363036 
+ 1219 0057 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1219      20726576 
+ 1219      6973696F 
+ 1219      6E203233 
+ 1219      37373135 
+ 1220 008a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1220      66756E63 
+ 1220      74696F6E 
+ 1220      2D736563 
+ 1220      74696F6E 
+ 1221              	.LASF5:
+ 1222 00b2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1222      20756E73 
+ 1222      69676E65 
+ 1222      6420696E 
+ 1222      7400
+ 1223              	.LASF3:
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 23
+
+
+ 1224 00c4 73686F72 		.ascii	"short unsigned int\000"
+ 1224      7420756E 
+ 1224      7369676E 
+ 1224      65642069 
+ 1224      6E7400
+ 1225              	.LASF13:
+ 1226 00d7 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 1226      6574615F 
+ 1226      63757374 
+ 1226      6E766C00 
+ 1227              	.LASF12:
+ 1228 00e7 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 1228      6574615F 
+ 1228      636F6E66 
+ 1228      69676563 
+ 1228      6300
+ 1229              	.LASF8:
+ 1230 00f9 756E7369 		.ascii	"unsigned int\000"
+ 1230      676E6564 
+ 1230      20696E74 
+ 1230      00
+ 1231              	.LASF7:
+ 1232 0106 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1232      206C6F6E 
+ 1232      6720756E 
+ 1232      7369676E 
+ 1232      65642069 
+ 1233              	.LASF10:
+ 1234 011d 75696E74 		.ascii	"uint8_t\000"
+ 1234      385F7400 
+ 1235              	.LASF15:
+ 1236 0125 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 1236      6574615F 
+ 1236      666C6173 
+ 1236      6870726F 
+ 1236      74656374 
+ 1237              	.LASF14:
+ 1238 013a 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 1238      6574615F 
+ 1238      776F6E76 
+ 1238      6C00
+ 1239              	.LASF11:
+ 1240 0148 73697A65 		.ascii	"sizetype\000"
+ 1240      74797065 
+ 1240      00
+ 1241              	.LASF6:
+ 1242 0151 6C6F6E67 		.ascii	"long long int\000"
+ 1242      206C6F6E 
+ 1242      6720696E 
+ 1242      7400
+ 1243              	.LASF2:
+ 1244 015f 73686F72 		.ascii	"short int\000"
+ 1244      7420696E 
+ 1244      7400
+ 1245              	.LASF4:
+ 1246 0169 6C6F6E67 		.ascii	"long int\000"
+ 1246      20696E74 
+ARM GAS  C:\Users\pc\AppData\Local\Temp\ccmNDfaK.s 			page 24
+
+
+ 1246      00
+ 1247              	.LASF0:
+ 1248 0172 7369676E 		.ascii	"signed char\000"
+ 1248      65642063 
+ 1248      68617200 
+ 1249              	.LASF19:
+ 1250 017e 433A5C55 		.ascii	"C:\\Users\\pc\\Desktop\\a\\PSoC_03\\AY1920_II_HW_05"
+ 1250      73657273 
+ 1250      5C70635C 
+ 1250      4465736B 
+ 1250      746F705C 
+ 1251 01ab 5F50524F 		.ascii	"_PROJ_2.cydsn\000"
+ 1251      4A5F322E 
+ 1251      63796473 
+ 1251      6E00
+ 1252              	.LASF18:
+ 1253 01b9 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 1253      72617465 
+ 1253      645F536F 
+ 1253      75726365 
+ 1253      5C50536F 
+ 1254              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
