@@ -74,9 +74,9 @@ int main(void)
         }
 
     }
-    /******************************************/
-    /*            I2C Writing                 */
-    /******************************************/
+    /*******************************************/
+    /*I2C Writing of registers at proper values*/ 
+    /*******************************************/
 
     uint8_t ctrl_reg1;
 
@@ -105,8 +105,62 @@ int main(void)
         UART_Debug_PutString("Error occurred during I2C comm to read control register4\r\n");
     }
     
+    uint8_t flag_ready1=0;
+    uint8_t flag_ready2=0;
+    uint8_t status_register;
+    uint8_t register_count=6;
+    int16_t OutX;
+    int16_t OutY;
+    int16_t OutZ;
+    float32 AccX;
+    float32 AccY;
+    float32 AccZ;
+    uint8_t AccData[6];
+    uint8_t header = 0xA0;
+    uint8_t footer = 0xC0;
+    uint8_t OutArray[14];
+    OutArray[0] = header;
+    OutArray[13] = footer;
     
+    Timer_Start(); // Timer initialization
+    isr_TIMER_StartEx(Custom_TIMER_ISR); //Interrupt pointing to the correct function address
     
+    for(;;)
+    {
+        if(flag_ready0) 
+        {
+            /*I read the status register and evaluate if new data is avaible 
+                checking the value of ZYXDA bit. Flag register will be 0 if 
+                no new data are avaiable while will be greater than zero(value = 8)
+                if new data are avaiable;
+                The cycle continues untill flag_ready1 is different from zero. Then if 
+                ZYXOR bit is equal to 1 it means a new set of data has overwritten the previous set,
+                so I can now read the accelerometer outputs
+            */
+            while(!flag_ready1)
+            {
+                error = I2C_Peripheral_ReadRegister(LIS3DH_DEVICE_ADDRESS,
+                                            LIS3DH_STATUS_REG,
+                                            &status_register);
+                if(error == NO_ERROR)
+                    flag_ready1=(status_register&(1<<3)); // & operation to check the value of ZYXDA bit
+            }
+            flag_ready2=(status_register&(1<<7)); // & operation to check the value of ZYXOR bit.
+            if(flag_ready2)
+            {
+                /*I can now read the accelerometer output through the multiread function starting
+                from LIS3DH_OUT_X_L(28h) to OUT_Z_H (2Dh) saving values is AccData */
+                error = I2C_Peripheral_ReadRegisterMulti(LIS3DH_DEVICE_ADDRESS,
+                                                              LIS3DH_OUT_X_L,
+                                                              register_count,
+                                                                &AccData[0]);
+                if(error == NO_ERROR)
+                {
+                }
+            }
+        }
+    }
+              
 }
     
 
