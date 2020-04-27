@@ -38,9 +38,11 @@
         <Files Root="C:\Users\pc\Desktop\a\PSoC_03\AY1920_II_HW_05_PROJ_2.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">I2C_Interface.c</File>
+          <File BuildType="BUILD" Toolchain="">InterruptRoutines.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">I2C_Interface.h</File>
           <File BuildType="BUILD" Toolchain="">ErrorCodes.h</File>
+          <File BuildType="BUILD" Toolchain="">InterruptRoutines.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\pc\Desktop\a\PSoC_03\AY1920_II_HW_05_PROJ_2.cydsn\Generated_Source\PSoC5">
@@ -115,6 +117,13 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\cycodeshareimport.scat</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_TIMER.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\isr_TIMER.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\pc\Desktop\a\PSoC_03\AY1920_II_HW_05_PROJ_2.cydsn\Export\ARM_GCC_Generic">

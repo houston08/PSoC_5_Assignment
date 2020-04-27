@@ -19,7 +19,7 @@
     *   \brief ISR Code.
     */
     CY_ISR_PROTO(Custom_TIMER_ISR);
-    _VOLATILE  uint8 flag_ready0; // Global variable that keeps memory of the led blinkin pattern state (value from 1 to 7)
+    _VOLATILE  uint8 flag_ready0=0; // Global variable that keeps memory of the led blinkin pattern state (value from 1 to 7)
 
 #endif
 /* [] END OF FILE */
