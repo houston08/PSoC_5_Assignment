@@ -128,22 +128,35 @@ int main(void)
         UART_Debug_PutString("Error occurred during I2C comm to read control register4\r\n");
     }
     
-        uint8_t register_count_temp=2;//I have to read 2(LSB and MSB) byte
+    uint8_t register_count_temp=2;//I have to read 2(LSB and MSB) byte
     uint8_t register_count_acc=6; //I have to read 2(LSB and MSB)*3(X,Y,Z) byte
+    
+    /*uint8_t Vectors whose size is equal to the number of bytes to be read to obtain 
+    acceleration and temperature values: 2(LSB and MSB) for temperature and
+    3 axis(X,Y,Z) times 2 byte (LSB ans MSB)=6bytes for acceleration */
+    
+    uint8_t TemperatureData[2];
+    uint8_t AccData[6];
+    
+    /*Acceleration value in digit will be stored in 3 16 bit integers*/
     int16_t OutX;
     int16_t OutY;
     int16_t OutZ;
-    int16_t OutTemp;
+    
+    int16_t OutTemp; //Temperature value
+    
+    /*UART Transmission */
     uint8_t header = 0xA0;
     uint8_t footer = 0xC0;
-    uint8_t OutArray[8];
-    uint8_t TemperatureData[2];
-    uint8_t AccData[6];
+    uint8_t OutArray[8]; /*Array of uint8_t that will be sent through UART.
+    Its dimension is 2Bytes*Number_of_axis(3)+ 2bytes(Header and Footer)=8*/
+    OutArray[0] = header;
+    OutArray[7] = footer;
+    
+    
     uint8_t flag_ready1=0;
     uint8_t flag_ready2=0;
     uint8_t status_register;
-    OutArray[0] = header;
-    OutArray[7] = footer;
     /*I read the Temperature that will be used later to compute the sensor sensitivity change.
       Since the sensitivity change is small and assuming no abrupt temperature changes after
       device power on the temperature value can be read just one time.*/
@@ -151,11 +164,11 @@ int main(void)
                                                       LIS3DH_OUT_ADC_3L,
                                                       register_count_temp,
                                                       &TemperatureData[0]);
-    OutTemp = (int16)((TemperatureData[0] | (TemperatureData[1]<<8)))>>6;
-    Timer_Start();
-    isr_TIMER_StartEx(Custom_TIMER_ISR);
+    //From 10bit left justified to int16 right justified
+    OutTemp = (int16)((TemperatureData[0] | (TemperatureData[1]<<8)))>>6; 
+    Timer_Start(); // Timer initialization
+    isr_TIMER_StartEx(Custom_TIMER_ISR); //Interrupt pointing to the correct function address
     
-    //I read the Temperature that will be used later to compute the sensor sensitivity change
     
     for(;;)
     {
