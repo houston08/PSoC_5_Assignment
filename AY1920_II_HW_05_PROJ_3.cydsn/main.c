@@ -105,21 +105,36 @@ int main(void)
         UART_Debug_PutString("Error occurred during I2C comm to read control register4\r\n");
     }
     
-    uint8_t flag_ready1=0;
+    /*VARIABLE DECLARATION*/
+    
+    /* Flags used to perform an accurate sampling of 100Hz frequency */
+    uint8_t flag_ready1=0; 
     uint8_t flag_ready2=0;
-    uint8_t status_register;
-    uint8_t register_count=6;
+    
+    uint8_t status_register; //Variable that will store the status register value
+    uint8_t register_count=6; //Numebers of byte to be read to get the 3 axis accelerartion
+    
+    /*Acceleration value in digit will be stored in 3 16 bit integers*/
     int16_t OutX;
     int16_t OutY;
     int16_t OutZ;
+    /*Acceleration value in m/s^2 will be stored in 3 32bit float variables */
     float32 AccX;
     float32 AccY;
     float32 AccZ;
-    uint8_t AccData[6];
-    uint8_t header = 0xA0;
-    uint8_t footer = 0xC0;
-    uint8_t OutArray[14];
-    OutArray[0] = header;
+   
+    /*uint8_t Vector whose size is equal to the number of bytes to be read to obtain 
+    acceleration value: 3 axis(X,Y,Z) times 2 byte (LSB ans MSB) */
+    uint8_t AccData[6];   
+    
+    /*UART Transmission */
+    
+    uint8_t header = 0xA0; //Header
+    uint8_t footer = 0xC0; //Footer
+    uint8_t OutArray[14]; //Array of uint8_t that will be sent through UART.
+    //Its dimension is 4bytes*Number_of_axis(3)+ 2bytes(Header and Footer)=14
+    
+    OutArray[0] = header; 
     OutArray[13] = footer;
     
     Timer_Start(); // Timer initialization
@@ -130,7 +145,7 @@ int main(void)
         if(flag_ready0) 
         {
             /*I read the status register and evaluate if new data is avaible 
-                checking the value of ZYXDA bit. Flag register will be 0 if 
+                checking the value of ZYXDA bit. flag_ready1 will be 0 if 
                 no new data are avaiable while will be greater than zero(value = 8)
                 if new data are avaiable;
                 The cycle continues untill flag_ready1 is different from zero. Then if 
@@ -156,6 +171,29 @@ int main(void)
                                                                 &AccData[0]);
                 if(error == NO_ERROR)
                 {
+                    /*In HR mode the output data are 12 left justified bit so
+                    to get the output I firstly do an or operation between LSB
+                    and MSB shitfed of eight position towards left, then to 
+                    achieve the right justification a shift of 4 bit towards 
+                    right is operated. The result is casted to 3 int16 variables */
+                    
+                    OutX = (int16)((AccData[0] | (AccData[1]<<8)))>>4;
+                    OutY = (int16)((AccData[2] | (AccData[3]<<8)))>>4;
+                    OutZ = (int16)((AccData[4] | (AccData[5]<<8)))>>4;
+                    
+                    /* We want to get the acceleration value in m/s^2 starting from its 
+                    digit value. The latter multiplied by the sensor sensitivity (2mg/digit if
+                    FS bit set to 01) gives the acceleration value in mg. Then multiplying by 
+                    the earth gravitational acceleration constant g (9.80665 m/s^2) and dividing
+                    by 1000 gives us the acceleration value in m/s^2. AccX,AccY and AccZ are
+                    float32 variables.*/
+                    
+                    AccX=(OutX*9.80665*2)/1000; 
+                    AccY=(OutY*9.80665*2)/1000;
+                    AccZ=(OutZ*9.80665*2)/1000;
+                    
+                    
+                    
                 }
             }
         }
