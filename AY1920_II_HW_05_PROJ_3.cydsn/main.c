@@ -122,7 +122,13 @@ int main(void)
     float32 AccX;
     float32 AccY;
     float32 AccZ;
-   
+    
+    /*Acceleration float value in m/s^2 will be cast in 3 32bit int variables */
+    
+    int32_t AccXint;
+    int32_t AccYint;
+    int32_t AccZint;
+    
     /*uint8_t Vector whose size is equal to the number of bytes to be read to obtain 
     acceleration value: 3 axis(X,Y,Z) times 2 byte (LSB ans MSB) */
     uint8_t AccData[6];   
@@ -191,6 +197,26 @@ int main(void)
                     AccX=(OutX*9.80665*2)/1000; 
                     AccY=(OutY*9.80665*2)/1000;
                     AccZ=(OutZ*9.80665*2)/1000;
+                    /* In order to cast a float value to a int value I can multiply the float value
+                    i.e. by 1000 keeping also 3 decimals information (and not only the integer value).
+                    Since the int value will be sent to Bridge control panel we have to set there 
+                    the proper scale value (0.001) for the 3 axis acceleration to get again the m/s^2 
+                    values. I add 0.5 to perform a round of the third decimal (the cast to int floors the 
+                    value to the previous integer e.g. 3.9->3, while in this way to the nearest integer 
+                    3.9->4)
+                    Alternativly, if we don't want to loose any information from float variable,
+                    we could have done a cast as follow:
+                    uint8_t *pointer1=(uint8_t*)&AccX;
+                    uint8_t *pointer2=(uint8_t*)&AccY;
+                    uint8_t *pointer3=(uint8_t*)&AccZ;
+                    Then we would have sent through UART pointer1[0](LSB of AccX)...pointer[3](MSB of AccX),
+                    pointer2[0](LSB of AccY)...[3](MSB of AccY), pointer3[0](LSB of AccZ)...[3](MSB of AccZ)
+                    that contain the 4 bytes of the 3 float variables and set in Bridge Control Panel 3 float 
+                    signed variables
+                    */
+                    AccXint=(int32)(AccX*1000+0.5);
+                    AccYint=(int32)(AccY*1000+0.5);
+                    AccZint=(int32)(AccZ*1000+0.5);
                     
                     
                     
