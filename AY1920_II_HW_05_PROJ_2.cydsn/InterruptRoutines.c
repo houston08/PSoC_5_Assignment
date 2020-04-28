@@ -21,7 +21,7 @@ _VOLATILE  uint8 flag_ready0; // Volatile Global variable enabling to sample
 
 CY_ISR(Custom_TIMER_ISR)
 {
-    Timer_ReadStatusRegister();
+    Timer_ReadStatusRegister(); // Timer Reset 
     flag_ready0=1;
 }
 /* [] END OF FILE */
