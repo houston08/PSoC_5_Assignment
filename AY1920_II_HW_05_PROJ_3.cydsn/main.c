@@ -212,14 +212,32 @@ int main(void)
                     Then we would have sent through UART pointer1[0](LSB of AccX)...pointer[3](MSB of AccX),
                     pointer2[0](LSB of AccY)...[3](MSB of AccY), pointer3[0](LSB of AccZ)...[3](MSB of AccZ)
                     that contain the 4 bytes of the 3 float variables and set in Bridge Control Panel 3 float 
-                    signed variables
+                    signed variables.
                     */
                     AccXint=(int32)(AccX*1000+0.5);
                     AccYint=(int32)(AccY*1000+0.5);
                     AccZint=(int32)(AccZ*1000+0.5);
                     
+                    /*Values send through UART. Each byte is computed through a uint8_T cast
+                    and & operation and shift identifying the proper byte from LSB to MSB*/
+                    //X acceleration bytes value 
+                    OutArray[1] = (uint8_t)(AccXint & 0xFF);
+                    OutArray[2] = (uint8_t)(AccXint >> 8);
+                    OutArray[3] = (uint8_t)(AccXint >> 16);
+                    OutArray[4] = (uint8_t)(AccXint >> 24);
+                    //Y acceleration bytes value 
+                    OutArray[5] = (uint8_t)(AccYint & 0xFF);
+                    OutArray[6] = (uint8_t)(AccYint >> 8);
+                    OutArray[7] = (uint8_t)(AccYint >> 16);
+                    OutArray[8] = (uint8_t)(AccYint >> 24);
+                    //Z acceleration bytes value
+                    OutArray[9] = (uint8_t)(AccZint & 0xFF);
+                    OutArray[10] = (uint8_t)(AccZint >> 8);
+                    OutArray[11] = (uint8_t)(AccZint >> 16);
+                    OutArray[12] = (uint8_t)(AccZint >> 24);                    
                     
-                    
+                    UART_Debug_PutArray(OutArray, 14); //Array sent through UART
+                    flag_ready0=0; // flag_ready will return to 1 the next time an isr will be generated
                 }
             }
         }

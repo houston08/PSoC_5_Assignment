@@ -1,6 +1,5 @@
 .DS_Store
-*.cywrk.*
-*.cywrk       
+*.cywrk.*        
 *.cyprj.*        
 *.cycdx        
 *.cyfit        
@@ -11,4 +10,8 @@
 *.cydsn/codegentemp        
 *.cydsn/DP8051        
 *.cydsn/Generated_Source
-AY1920_II_HW_05_GRIMALDI_MICHELE.cywrk
+Generated_Source
+Debug
+*.log
+Export
+*.svd
